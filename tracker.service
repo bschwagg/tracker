@@ -1,0 +1,12 @@
+[Unit]
+Description=Auto-magically watch development time on your projects
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash /opt/tracker/trackerStart.sh
+ExecStop=/bin/bash /opt/tracker/trackerStop.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
+

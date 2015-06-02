@@ -7,8 +7,8 @@ This service monitors for events such as any file in the directory (recursively)
 
 
 ## INSTALLATION
-Ubuntu/Debian: <pre>$>sudo dpkg -i tracker_<version>_all.deb</pre>
-Redhat:        <pre>$>sudo rpm -ivh tracker_<version>.noarch.rpm   #Note: Untested!</pre>
+Ubuntu/Debian: <pre>$>sudo dpkg -i tracker_version_all.deb</pre>
+Redhat:        <pre>$>sudo rpm -ivh tracker_version.noarch.rpm   #Note: Untested!</pre>
 
 ## SERVICE USAGE:
 <pre>

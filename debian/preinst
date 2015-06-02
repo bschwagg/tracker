@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "Checking if when-changed tool is installed..."
+if [[ `when-changed` ]] ; then  
+  echo "when-changed already installed"
+else 
+ pip install https://github.com/joh/when-changed/archive/master.zip
+fi

@@ -1,0 +1,14 @@
+Source: tracker
+Section: misc
+Priority: optional
+Maintainer: Brad Schwagler, <brad.schwagler@gmail.com>
+Build-Depends:	debhelper (>= 7),
+				python (>= 2.6-3~)
+Standards-Version: 3.9.6
+X-Python-Version: >= 2.6
+
+Package: tracker
+Architecture: all
+Depends: ${python:Depends}, ${misc:Depends}
+Description:  Automatically track your contracting time on projects.
+ More description here.

@@ -1,0 +1,5 @@
+ln -fs  /opt/tracker/tracker.sh /usr/bin/tracker
+mkdir -p /opt/tracker/logs
+systemctl daemon-reload
+systemctl enable tracker
+systemctl start tracker

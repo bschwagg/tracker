@@ -1,0 +1,71 @@
+ dpkg-buildpackage -rfakeroot -D -us -uc
+dpkg-buildpackage: source package tracker
+dpkg-buildpackage: source version 1.0-1
+dpkg-buildpackage: source distribution UNRELEASED
+dpkg-buildpackage: source changed by bschwagg <brad.schwagler@gmail.com>
+ dpkg-source --before-build tracker
+dpkg-buildpackage: host architecture amd64
+ fakeroot debian/rules clean
+dh clean --with python2
+   dh_testdir
+   dh_auto_clean
+   dh_clean
+ dpkg-source -b tracker
+dpkg-source: warning: no source format specified in debian/source/format, see dpkg-source(1)
+dpkg-source: warning: source directory 'tracker' is not <sourcepackage>-<upstreamversion> 'tracker-1.0'
+dpkg-source: info: using source format `1.0'
+dpkg-source: info: building tracker in tracker_1.0-1.tar.gz
+dpkg-source: info: building tracker in tracker_1.0-1.dsc
+ debian/rules build
+dh build --with python2
+   dh_testdir
+   dh_auto_configure
+   dh_auto_build
+   dh_auto_test
+ fakeroot debian/rules binary
+dh binary --with python2
+   dh_testroot
+   dh_prep
+   dh_auto_install
+   dh_install
+   dh_installdocs
+   dh_installchangelogs
+   dh_python2
+W: dh_python2:479: Please add dh-python package to Build-Depends
+   dh_perl
+   dh_link
+   dh_compress
+   dh_fixperms
+   dh_installdeb
+   dh_gencontrol
+dpkg-gencontrol: warning: Depends field of package tracker: unknown substitution variable ${python:Depends}
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package `tracker' in `../tracker_1.0-1_all.deb'.
+ dpkg-genchanges  >../tracker_1.0-1_amd64.changes
+dpkg-genchanges: including full source code in upload
+ dpkg-source --after-build tracker
+dpkg-buildpackage: full upload; Debian-native package (full source is included)
+Now running lintian...
+W: tracker source: native-package-with-dash-version
+W: tracker source: diff-contains-git-control-dir .git
+W: tracker source: maintainer-script-lacks-debhelper-token debian/preinst
+W: tracker source: maintainer-script-lacks-debhelper-token debian/postinst
+W: tracker source: package-needs-versioned-debhelper-build-depends 9
+W: tracker source: no-debian-copyright
+W: tracker: wrong-bug-number-in-closes l3:#XXXXXX
+W: tracker: new-package-should-close-itp-bug
+E: tracker: no-copyright-file
+E: tracker: dir-or-file-in-opt opt/tracker/
+E: tracker: dir-or-file-in-opt opt/tracker/entry.sh
+E: tracker: dir-or-file-in-opt opt/tracker/entryAll.sh
+E: tracker: dir-or-file-in-opt opt/tracker/tracker.py
+E: tracker: dir-or-file-in-opt opt/tracker/tracker.sh
+E: tracker: dir-or-file-in-opt opt/tracker/trackerStart.sh
+E: tracker: dir-or-file-in-opt opt/tracker/trackerStop.sh
+E: tracker: dir-or-file-in-opt opt/tracker/tracker_register.sh
+E: tracker: python-script-but-no-python-dep opt/tracker/tracker.py
+E: tracker: shell-script-fails-syntax-check opt/tracker/tracker_register.sh
+W: tracker: executable-not-elf-or-script usr/lib/systemd/system/tracker.service
+W: tracker: maintainer-script-ignores-errors preinst
+Finished running lintian.

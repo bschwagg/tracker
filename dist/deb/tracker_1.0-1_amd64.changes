@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Tue, 02 Jun 2015 08:34:08 -0700
+Source: tracker
+Binary: tracker
+Architecture: source all
+Version: 1.0-1
+Distribution: UNRELEASED
+Urgency: medium
+Maintainer: Brad Schwagler, <brad.schwagler@gmail.com>
+Changed-By: bschwagg <brad.schwagler@gmail.com>
+Description:
+ tracker    - Automatically track your contracting time on projects.
+Changes:
+ tracker (1.0-1) UNRELEASED; urgency=medium
+ .
+   * Initial release. (Closes: #XXXXXX)
+Checksums-Sha1:
+ b6fced7f44356c78064e8e94bf75bee314720bd3 526 tracker_1.0-1.dsc
+ c31b600fe0b297f0c16336242789d5b3985997c4 242808 tracker_1.0-1.tar.gz
+ 38ff1a5744e22cfc056070b3eef7e4050b4ee743 4200 tracker_1.0-1_all.deb
+Checksums-Sha256:
+ abff864e69987041a685cb1944e349393ffbb7ca197e22e6a76e15258e66610c 526 tracker_1.0-1.dsc
+ 2cdc770670b338477e460a7e09fa41906453202f08c16915c96692b5c6631619 242808 tracker_1.0-1.tar.gz
+ 2e0f28d8ad02776ace8e4c24775d937054272b8baaa5c1fa7c7b90be6716e680 4200 tracker_1.0-1_all.deb
+Files:
+ 8c484a72efcc90c14953b8ff5ebea736 526 misc optional tracker_1.0-1.dsc
+ 20c2e0d3a9d45b4200c8f9d386138060 242808 misc optional tracker_1.0-1.tar.gz
+ 0829d3c70e519575b163fda312b67da2 4200 misc optional tracker_1.0-1_all.deb

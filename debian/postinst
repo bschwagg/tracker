@@ -1,5 +1,7 @@
-ln -fs  /opt/tracker/tracker.sh /usr/bin/tracker
-mkdir -p /opt/tracker/logs
-systemctl daemon-reload
-systemctl enable tracker
-systemctl start tracker
+ln -fs  /opt/tracker/tracker.sh /usr/bin/tracker 	|| echo "Failed to install tracker in /usr/bin !" && exit 1
+mkdir -p /opt/tracker/logs 							|| echo "Unable to make /opt/tracker/logs directory! Failed to install." && exit 1
+echo "Enabling the service tracker"
+systemctl daemon-reload 							|| echo "Unable to call: systemctl daemon-reload! Failed to install." && exit 1
+systemctl enable tracker 							|| echo "Unable to call: systemctl enable tracker! Failed to install." && exit 1
+systemctl start tracker							    || echo "Unable to call:systemctl start tracker! Failed to install." && exit 1
+echo "Installed succesfully! To begin using type 'tracker --help'"

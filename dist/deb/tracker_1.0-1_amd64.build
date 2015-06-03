@@ -60,7 +60,6 @@ E: tracker: dir-or-file-in-opt opt/tracker/
 E: tracker: dir-or-file-in-opt opt/tracker/entry.sh
 E: tracker: dir-or-file-in-opt opt/tracker/entryAll.sh
 E: tracker: dir-or-file-in-opt opt/tracker/tracker.py
-E: tracker: dir-or-file-in-opt opt/tracker/tracker.sh
 E: tracker: dir-or-file-in-opt opt/tracker/trackerStart.sh
 E: tracker: dir-or-file-in-opt opt/tracker/trackerStop.sh
 E: tracker: dir-or-file-in-opt opt/tracker/tracker_register.sh

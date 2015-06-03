@@ -1,7 +1,6 @@
 entryAll.sh /opt/tracker/
 entry.sh /opt/tracker/
 tracker_register.sh /opt/tracker/
-tracker.sh /opt/tracker/
 trackerStart.sh /opt/tracker/
 trackerStop.sh /opt/tracker/
 tracker.py /opt/tracker/

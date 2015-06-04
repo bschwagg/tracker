@@ -64,7 +64,6 @@ E: tracker: dir-or-file-in-opt opt/tracker/trackerStart.sh
 E: tracker: dir-or-file-in-opt opt/tracker/trackerStop.sh
 E: tracker: dir-or-file-in-opt opt/tracker/tracker_register.sh
 E: tracker: python-script-but-no-python-dep opt/tracker/tracker.py
-E: tracker: shell-script-fails-syntax-check opt/tracker/tracker_register.sh
 W: tracker: executable-not-elf-or-script usr/lib/systemd/system/tracker.service
 W: tracker: maintainer-script-ignores-errors preinst
 Finished running lintian.

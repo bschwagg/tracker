@@ -15,14 +15,14 @@ Changes:
  .
    * Initial release. (Closes: #XXXXXX)
 Checksums-Sha1:
- 5143af4c558f92c26244cd9ad70078348238645e 529 tracker_1.0-1.dsc
- a6c5acd31715c694adf344dbad60c9a85135bce3 1665941 tracker_1.0-1.tar.gz
- 4da79995dc5952847d8d254418b01809cb7c606a 4340 tracker_1.0-1_all.deb
+ c20413fa30078dc2e19d65d2fce49df17e9ffa84 529 tracker_1.0-1.dsc
+ a0da4e850ffb99357ad42b06f438c78bb20d868f 7566965 tracker_1.0-1.tar.gz
+ 633567572c2643e4cf5cb6d44ad4b6ef7f47859e 4582 tracker_1.0-1_all.deb
 Checksums-Sha256:
- b3271b3a2e311acc4d00168d3a52740518cf75a04e59c708788b087b71cca308 529 tracker_1.0-1.dsc
- 29cd44c0a9897af1874fcff49bfa1501a6e3f4e4746e6b71f18a1f0444ac3da8 1665941 tracker_1.0-1.tar.gz
- c2baec6e5b0f9c66da594b02082e3affce71579983a4380c5667d4e414998b83 4340 tracker_1.0-1_all.deb
+ 1933e7eddde6c5638ff11ae5afd9a393ec2babe8c47e8f815bfe905d00deed8c 529 tracker_1.0-1.dsc
+ 7bbe88f341832d1fe5abddbca03c0a2a9aa9a071fbae6cfdb297f22bb412bfb6 7566965 tracker_1.0-1.tar.gz
+ 930808290d12732b1619bf4d0bc9a638eebf2f6b46a5bc388a897c1111aced08 4582 tracker_1.0-1_all.deb
 Files:
- cafc2e90bbf701f7f2b2ed56ee04d28f 529 misc optional tracker_1.0-1.dsc
- 1f7a2fe83c6ad07ace0843d5f123df2c 1665941 misc optional tracker_1.0-1.tar.gz
- cd43442edf115264d9aaaf391d941822 4340 misc optional tracker_1.0-1_all.deb
+ 3ad23d8fedd7797085d85cebf8f278d3 529 misc optional tracker_1.0-1.dsc
+ eba6c0c8f82ee05318d5d3e4d8b8ebd7 7566965 misc optional tracker_1.0-1.tar.gz
+ 1a57c10a6b6367cf4c5b44b42185f1fa 4582 misc optional tracker_1.0-1_all.deb

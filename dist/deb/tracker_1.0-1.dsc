@@ -9,8 +9,8 @@ Build-Depends: debhelper (>= 7), python (>= 2.6-3~)
 Package-List:
  tracker deb misc optional arch=all
 Checksums-Sha1:
- a6c5acd31715c694adf344dbad60c9a85135bce3 1665941 tracker_1.0-1.tar.gz
+ a0da4e850ffb99357ad42b06f438c78bb20d868f 7566965 tracker_1.0-1.tar.gz
 Checksums-Sha256:
- 29cd44c0a9897af1874fcff49bfa1501a6e3f4e4746e6b71f18a1f0444ac3da8 1665941 tracker_1.0-1.tar.gz
+ 7bbe88f341832d1fe5abddbca03c0a2a9aa9a071fbae6cfdb297f22bb412bfb6 7566965 tracker_1.0-1.tar.gz
 Files:
- 1f7a2fe83c6ad07ace0843d5f123df2c 1665941 tracker_1.0-1.tar.gz
+ eba6c0c8f82ee05318d5d3e4d8b8ebd7 7566965 tracker_1.0-1.tar.gz

@@ -1,4 +1,5 @@
 #!/bin/bash
+# Use gdbus monitor to watch for seesion events from canonical unity
 
 #All credit for this function goes to: http://ubuntuforums.org/showthread.php?t=1059023
 function set_dbus_address
@@ -34,7 +35,6 @@ fi
 return 0
 }
 
-
 #set_dbus_address #not needed since we're running this script from the same user's session
 
 # DESCRIPTION: This command uses gdbus to monitor activity in the session.\
@@ -44,7 +44,7 @@ return 0
 cmd="gdbus monitor -e -d com.canonical.Unity -o /com/canonical/Unity/Session"
 
 if [[ `ps aux | grep "${cmd}"` ]] ; then
-	# Tracker already running. No need to start it
+	/opt/tracker/entryAll.sh "register_session_monitor" #maybe this isn't needed
 else
 	# Start the tracker. This is called when the user logs in after the 
 	# service first runs to install it.
